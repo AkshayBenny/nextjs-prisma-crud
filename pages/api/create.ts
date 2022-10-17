@@ -11,7 +11,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
         content: content,
       },
     })
-    res.status(201).send({ message: 'Note created successfully!', note })
+    res.status(200).send({ message: 'Note created successfully!', note })
   } catch (error) {
     res.status(500).send(error)
   }
