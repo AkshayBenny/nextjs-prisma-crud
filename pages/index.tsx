@@ -85,7 +85,6 @@ const Notes = ({ notes, bookmarks }) => {
           onChange={(e) =>
             setNote((prev) => ({ ...prev, content: e.target.value }))
           }
-          type='text'
           value={note.content}
           placeholder='Type your notes here'
           className='border rounded-md w-full px-4 py-2'
